@@ -1,0 +1,16 @@
+# antibody bundle < .zsh_plugins.txt > ~/.zsh_plugins.sh
+# must be run again any time a change is made to ~/.zsh_plugins.txt
+
+bhilburn/powerlevel9k
+
+# zsh-users Plugsin
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting
+
+# Oh My Zsh! Plugins
+ohmyzsh/ohmyzsh path:plugins/aws
+ohmyzsh/ohmyzsh path:plugins/dotenv
+ohmyzsh/ohmyzsh path:plugins/virtualenvwrapper
+ohmyzsh/ohmyzsh path:plugins/vscode

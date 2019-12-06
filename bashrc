@@ -1,3 +1,4 @@
+# -*- mode: bash -*-
 # $HOME/.bashrc
 #
 # this file is sourced by all *interactive* bash shells on startup,
@@ -14,15 +15,15 @@ if [[ $- != *i* ]] ; then
 fi
 
 # load all files from .shell/bashrc.d directory
-if [ -d $HOME/.shellrc/bashrc.d ]; then
-  for file in $HOME/.shellrc/bashrc.d/*.bash; do
-    source $file
+if [ -d "$HOME"/.shellrc/bashrc.d ]; then
+  for file in "$HOME"/.shellrc/bashrc.d/*.bash; do
+    source "$file"
   done
 fi
 
 # load all files from .shell/rc.d directory
-if [ -d $HOME/.shellrc/rc.d ]; then
-  for file in $HOME/.shellrc/rc.d/*.sh; do
-    source $file
+if [ -d "$HOME"/.shellrc/rc.d ]; then
+  for file in "$HOME"/.shellrc/rc.d/*.sh; do
+    source "$file"
   done
 fi

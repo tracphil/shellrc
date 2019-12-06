@@ -10,13 +10,13 @@ I don't like messy dotfiles. You can [read here](https://chr4.org/blog/2014/09/1
 * `~/.shellrc/login.d` as an include.d style directory for shared zlogin/bash\_profile scripts
 * git repository information (current branch, current status) without external dependencies
 * colorful prompt
-* shared history for all shells
+* shared history for all shells [TODO]
 
 ## Installation
 
 ```bash
 cd
-git clone git://github.com/chr4/shellrc.git .shellrc
+git clone git://github.com/tracphil/shellrc.git .shellrc
 
 # bash config
 ln -sf .shellrc/bashrc .bashrc
