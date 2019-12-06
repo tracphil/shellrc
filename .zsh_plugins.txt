@@ -12,5 +12,6 @@ zsh-users/zsh-syntax-highlighting
 # Oh My Zsh! Plugins
 ohmyzsh/ohmyzsh path:plugins/aws
 ohmyzsh/ohmyzsh path:plugins/dotenv
-ohmyzsh/ohmyzsh path:plugins/virtualenvwrapper
+ohmyzsh/ohmyzsh path:plugins/pyenv
+# ohmyzsh/ohmyzsh path:plugins/virtualenvwrapper
 ohmyzsh/ohmyzsh path:plugins/vscode
