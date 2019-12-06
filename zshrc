@@ -20,7 +20,7 @@ if [[ -f $HOME/.zsh_plugins.sh ]]; then
     source "$HOME"/.zsh_plugins.sh
 fi
 
-# Load antibody
+# Load secure variables
 if [[ -f $HOME/.secure_variables.sh ]]; then
     source "$HOME"/.secure_variables.sh
 fi
