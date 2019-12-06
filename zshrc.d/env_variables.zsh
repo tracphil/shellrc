@@ -1,0 +1,4 @@
+# Ansible
+ANSIBLE_RETRY_FILES_ENABLED=0
+
+VAGRANT_GET_DOMAIN="nocbot.dev"
