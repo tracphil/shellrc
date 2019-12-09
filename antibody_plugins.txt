@@ -1,5 +1,5 @@
-# antibody bundle < .zsh_plugins.txt > ~/.zsh_plugins.sh
-# must be run again any time a change is made to ~/.zsh_plugins.txt
+# antibody bundle < antibody_plugins.txt > ~/.antibody_plugins.sh
+# must be run again any time a change is made to ~/.shellrc/antibody_plugins.txt
 
 bhilburn/powerlevel9k
 

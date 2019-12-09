@@ -16,8 +16,8 @@ if [[ -d $HOME/.shellrc/rc.d ]]; then
 fi
 
 # Load antibody
-if [[ -f $HOME/.zsh_plugins.sh ]]; then
-    source "$HOME"/.zsh_plugins.sh
+if [[ -f $HOME/.antibody_plugins.sh ]]; then
+    source "$HOME"/.antibody_plugins.sh
 fi
 
 # Load secure variables

@@ -27,3 +27,14 @@ ln -sf .shellrc/inputrc .inputrc
 ln -sf .shellrc/zshrc .zshrc
 ln -sf .shellrc/zlogin .zlogin
 ```
+
+### Install Antibody and plugins
+
+```bash
+brew install getantibody/tap/antibody
+```
+
+```bash
+cd ~/.shellrc
+antibody bundle < antibody_plugins.txt > ~/.antibody_plugins.sh
+```
