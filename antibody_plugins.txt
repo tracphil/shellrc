@@ -1,7 +1,8 @@
 # antibody bundle < antibody_plugins.txt > ~/.antibody_plugins.sh
 # must be run again any time a change is made to ~/.shellrc/antibody_plugins.txt
 
-bhilburn/powerlevel9k
+# bhilburn/powerlevel9k
+romkatv/powerlevel10k
 
 # zsh-users Plugsin
 zsh-users/zsh-autosuggestions
