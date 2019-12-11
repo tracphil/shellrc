@@ -13,6 +13,11 @@ export NOCBOT_ROLES_PATH=$NOCBOT_HOME/roles
 # Ansible
 ANSIBLE_ROLES_PATH=$NOCBOT_ROLES_PATH
 
+# Use gls if it is available
+if [[ -x /usr/local/bin/gls ]]; then
+    alias ls="gls --color=auto"
+fi
+
 alias ssh="ssh -A"
 alias awsinfo="awsinfo.py"
 
