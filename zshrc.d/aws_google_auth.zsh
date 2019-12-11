@@ -8,9 +8,9 @@
 ### find the SP ID by drilling into the Google Apps console, under Apps > SAML Apps > Settings for AWS SSO
 ### the URL will include a component that looks like ...#AppDetails:service=123456789012... -- that number is GOOGLE_SP_ID
 # -p --profile = PROFILE    # AWS profile (defaults to value of $AWS_PROFILE, then falls back to 'sts')
-alias mantoso-infosec="set -e AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-infosec && set -xU AWS_PROFILE mantoso-infosec"
-alias mantoso-master="set -e AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-master && set -xU AWS_PROFILE mantoso-master"
-alias mantoso-prod="set -e AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-prod && set -xU AWS_PROFILE mantoso-prod"
-alias mantoso-uat="set -e AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-uat && set -xU AWS_PROFILE mantoso-uat"
-alias mantoso-int="set -e AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-int && set -xU AWS_PROFILE mantoso-int"
-alias mantoso-qa="set -e AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-qa && set -xU AWS_PROFILE mantoso-qa"
+alias mantoso-infosec="export AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-infosec && export AWS_PROFILE=mantoso-infosec"
+alias mantoso-master="export AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-master && export AWS_PROFILE=mantoso-master"
+alias mantoso-prod="export AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-prod && export AWS_PROFILE=mantoso-prod"
+alias mantoso-uat="export AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-uat && export AWS_PROFILE=mantoso-uat"
+alias mantoso-int="export AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-int && export AWS_PROFILE=mantoso-int"
+alias mantoso-qa="export AWS_PROFILE && cat ~/.mantoso-pass | aws-google-auth -R us-east-1 -p mantoso-qa && export AWS_PROFILE=mantoso-qa"
