@@ -41,7 +41,7 @@ antibody bundle < antibody_plugins.txt > ~/.antibody_plugins.sh
 
 ### Powerline
 
-`powerlevel9k` is included in the antibody plugins above.
+`powerlevel10k` is included in the antibody plugins above.
 
 Be sure to add a [nerd-font](https://nerdfonts.com) and set the font in iTerm2
 
