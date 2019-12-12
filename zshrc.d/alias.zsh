@@ -14,8 +14,16 @@ export NOCBOT_ROLES_PATH=$NOCBOT_HOME/roles
 ANSIBLE_ROLES_PATH=$NOCBOT_ROLES_PATH
 
 # Use gls if it is available
-if [[ -x /usr/local/bin/gls ]]; then
-    alias ls="gls --color=auto"
+if which gls >/dev/null 2>&1;
+then
+  alias ls="gls --color=auto"
+  alias ll="gls -l --color=auto"
+fi
+
+# GRC colorizes nifty unix tools all over the place
+if which gls >/dev/null 2>&1;
+then
+  source `brew --prefix`/etc/grc.bashrc
 fi
 
 alias ssh="ssh -A"
