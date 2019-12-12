@@ -16,8 +16,13 @@ if [[ -d $HOME/.shellrc/rc.d ]]; then
 fi
 
 # Load antibody
+
 if [[ -f $HOME/.antibody_plugins.sh ]]; then
-    source "$HOME"/.antibody_plugins.sh
+    ANTIBODY_HOME="$(antibody home)"
+    # Load Oh-My-Zsh varaibles first
+    ZSH="${ANTIBODY_HOME}/https-COLON--SLASH--SLASH-github.com-SLASH-ohmyzsh-SLASH-ohmyzsh"
+    DISABLE_AUTO_UPDATE="true"
+    source "${HOME}"/.antibody_plugins.sh
 fi
 
 # Load secure variables
