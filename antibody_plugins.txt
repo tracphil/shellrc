@@ -11,11 +11,13 @@ zsh-users/zsh-history-substring-search
 zsh-users/zsh-syntax-highlighting
 
 # Oh My Zsh! Plugins
+ohmyzsh/ohmyzsh
 ohmyzsh/ohmyzsh path:plugins/aws
 ohmyzsh/ohmyzsh path:plugins/colored-man-pages
 ohmyzsh/ohmyzsh path:plugins/colorize
 ohmyzsh/ohmyzsh path:plugins/dotenv
 ohmyzsh/ohmyzsh path:plugins/pyenv
+ohmyzsh/ohmyzsh path:plugins/osx
 # ohmyzsh/ohmyzsh path:plugins/systemadmin
 ohmyzsh/ohmyzsh path:plugins/terraform
 ohmyzsh/ohmyzsh path:plugins/vscode
