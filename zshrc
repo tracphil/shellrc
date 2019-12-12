@@ -2,22 +2,22 @@
 # "$HOME"/.zshrc
 
 # load all files from .shell/zshrc.d directory
-if [[ -d $HOME/.shellrc/zshrc.d ]]; then
-  for file in "$HOME"/.shellrc/zshrc.d/*.zsh; do
+if [[ -d ${HOME}/.shellrc/zshrc.d ]]; then
+  for file in "${HOME}"/.shellrc/zshrc.d/*.zsh; do
     source "$file"
   done
 fi
 
 # load all files from .shell/rc.d directory
-if [[ -d $HOME/.shellrc/rc.d ]]; then
-  for file in "$HOME"/.shellrc/rc.d/*.sh; do
+if [[ -d ${HOME}/.shellrc/rc.d ]]; then
+  for file in "${HOME}"/.shellrc/rc.d/*.sh; do
     source "$file"
   done
 fi
 
 # Load antibody
 
-if [[ -f $HOME/.antibody_plugins.sh ]]; then
+if [[ -f ${HOME}/.antibody_plugins.sh ]]; then
     ANTIBODY_HOME="$(antibody home)"
     # Load Oh-My-Zsh varaibles first
     ZSH="${ANTIBODY_HOME}/https-COLON--SLASH--SLASH-github.com-SLASH-ohmyzsh-SLASH-ohmyzsh"
@@ -26,6 +26,6 @@ if [[ -f $HOME/.antibody_plugins.sh ]]; then
 fi
 
 # Load secure variables
-if [[ -f $HOME/.secure_variables.sh ]]; then
-    source "$HOME"/.secure_variables.sh
+if [[ -f ${HOME}/.secure_variables.sh ]]; then
+    source "${HOME}"/.secure_variables.sh
 fi
