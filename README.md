@@ -26,6 +26,11 @@ ln -sf .shellrc/inputrc .inputrc
 # zsh config
 ln -sf .shellrc/zshrc .zshrc
 ln -sf .shellrc/zlogin .zlogin
+
+# PowerShell config
+
+mkdir -p ~/.config/powershell
+ln -sF ~/.shellrc/Microsoft.PowerShell_profile.ps1 ~/.config/powershell/Microsoft.PowerShell_profile.ps1
 ```
 
 ### Install Antibody and plugins
