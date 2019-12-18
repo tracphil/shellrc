@@ -29,3 +29,11 @@ fi
 if [[ -f ${HOME}/.secure_variables.sh ]]; then
     source "${HOME}"/.secure_variables.sh
 fi
+
+# Completion needs to be here...
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+
+if [[ -f /usr/local/etc/bash_completion.d/az ]]; then
+    source /usr/local/etc/bash_completion.d/az
+fi
