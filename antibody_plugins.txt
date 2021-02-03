@@ -21,3 +21,4 @@ ohmyzsh/ohmyzsh path:plugins/osx
 # ohmyzsh/ohmyzsh path:plugins/systemadmin
 ohmyzsh/ohmyzsh path:plugins/terraform
 ohmyzsh/ohmyzsh path:plugins/vscode
+ohmyzsh/ohmyzsh path:plugins/keychain
