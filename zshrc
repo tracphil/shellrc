@@ -26,8 +26,8 @@ if [[ -f ${HOME}/.antibody_plugins.sh ]]; then
 fi
 
 # Load secure variables
-if [[ -f ${HOME}/.secure_variables.sh ]]; then
-    source "${HOME}"/.secure_variables.sh
+if [[ -f ${HOME}/.private.zsh ]]; then
+    source "${HOME}"/.private.zsh
 fi
 
 # Completion needs to be here...
