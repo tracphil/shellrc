@@ -15,8 +15,8 @@ I don't like messy dotfiles. You can [read here](https://chr4.org/blog/2014/09/1
 ## Installation
 
 ```bash
-cd
-git clone git://github.com/tracphil/shellrc.git .shellrc
+cd ~/
+git clone git@github.com:tracphil/shellrc.git .shellrc
 
 # bash config
 ln -sf .shellrc/bashrc .bashrc
@@ -35,6 +35,14 @@ ln -sF ~/.shellrc/Microsoft.PowerShell_profile.ps1 ~/.config/powershell/Microsof
 
 ### Install Antibody and plugins
 
+#### Ubuntu
+
+```
+curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin
+```
+
+#### MacOS
+
 ```bash
 brew install getantibody/tap/antibody
 ```
@@ -48,7 +56,7 @@ antibody bundle < antibody_plugins.txt > ~/.antibody_plugins.sh
 
 `powerlevel10k` is included in the antibody plugins above.
 
-Be sure to add a [nerd-font](https://nerdfonts.com) and set the font in iTerm2
+Be sure to add a [nerd-font](https://nerdfonts.com) and set the font in iTerm2, Gnome Terminal or Windows Terminal
 
 ```bash
 brew cask install font-meslo-nerd-font

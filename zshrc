@@ -16,7 +16,6 @@ if [[ -d ${HOME}/.shellrc/rc.d ]]; then
 fi
 
 # Load antibody
-
 if [[ -f ${HOME}/.antibody_plugins.sh ]]; then
     ANTIBODY_HOME="$(antibody home)"
     # Load Oh-My-Zsh varaibles first
@@ -37,3 +36,5 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 if [[ -f /usr/local/etc/bash_completion.d/az ]]; then
     source /usr/local/etc/bash_completion.d/az
 fi
+
+eval "$(pyenv virtualenv-init -)"
