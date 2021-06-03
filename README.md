@@ -26,6 +26,7 @@ ln -sf .shellrc/inputrc .inputrc
 # zsh config
 ln -sf .shellrc/zshrc .zshrc
 ln -sf .shellrc/zlogin .zlogin
+ln -sf .shellrc/zprofile .zprofile
 
 # PowerShell config
 

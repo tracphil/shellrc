@@ -23,7 +23,7 @@ fi
 # GRC colorizes nifty unix tools all over the place
 if which gls >/dev/null 2>&1;
 then
-  source `brew --prefix`/etc/grc.bashrc
+  source `brew --prefix`/etc/grc.sh
 fi
 
 alias ssh="ssh -A"
